@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "object-curly-spacing": [0, "never"],
+    "key-spacing": [0],
+    "keyword-spacing": [0],
+    "max-len":[0],
+    "semi":[0],
+    'no-use-before-define':[0],
+    "space-before-blocks": [0],
+    "indent":[0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  },
+  "env" :{
+    "browser": true,
+  }
+}
