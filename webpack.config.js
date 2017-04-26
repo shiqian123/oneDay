@@ -31,7 +31,8 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    port: 8008,
+    port: 8000,
   },
+  devtool: 'source-map',
   plugins: [HTMLWebpackPluginConfig],
 };
