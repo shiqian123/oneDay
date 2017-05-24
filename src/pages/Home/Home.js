@@ -27,7 +27,7 @@ class Submit extends Component{
     return(
       <div>
         {
-          this.props.data ? this.props.data.blog.map(function (result,i) {
+          this.props.data ? this.props.data.blogs.map(function (result,i) {
             return (<Card key={i}>
               <CardHeader
                 title={result.author}

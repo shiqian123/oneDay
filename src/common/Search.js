@@ -3,6 +3,7 @@
  */
 import React, {Component}from 'react';
 import {connect} from 'react-redux';
+import {searchData} from '../actions'
 import RaisedButton from 'material-ui/RaisedButton';
 
 class Search extends Component {
@@ -16,7 +17,8 @@ class Search extends Component {
     this.serach = ()=>{this.search()}
   }
   search(){
-    console.log(this.refs.searchInput.value)
+    let { dispatch } = this.props;
+    dispatch(searchData(this.refs.searchInput.value))
   }
   render() {
     return (
@@ -53,4 +55,4 @@ let searchS = {
     right:0
   }
 }
-export default Search;
+export default connect()(Search);

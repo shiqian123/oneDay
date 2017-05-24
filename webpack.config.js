@@ -5,7 +5,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   filename: 'index.html',
   inject: 'body',
 });
-
+const URL = 'localhost'
 module.exports = {
   entry: [
     './src/index.js',
@@ -32,6 +32,7 @@ module.exports = {
   devServer: {
     inline: true,
     port: 8000,
+    host: URL,
   },
   devtool: 'source-map',
   plugins: [HTMLWebpackPluginConfig],

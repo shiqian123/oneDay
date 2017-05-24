@@ -2,7 +2,7 @@ import React ,{Component}from 'react';
 import { Link, IndexLink } from 'react-router';
 import styles from './appStyles';
 import NavLink from '../NavLink';
-
+import responsiveNav from '../../../res/nav/responsive-nav'
 class App extends Component{
   // 构造
   constructor(props) {
@@ -13,17 +13,20 @@ class App extends Component{
     };
   }
   componentDidMount() {
+    console.log(this.context)
+    responsiveNav("#nav");
     // this.context.router.push('/submit')
     fetch('package.json')
       .then(
         function (response){
+          console.log(response)
           if(response.status!==200){
             console.log('存在一个问题，状态码为：'+response.status);
             return;
           }
           // 检查响应文本
           response.json().then(function (data){
-            // console.log(data);
+             console.log(data);
           });
         }
       )
@@ -33,10 +36,10 @@ class App extends Component{
   }
   render(){
     return(
-      <div className="box">
+      <div >
         <div>
-          <h1>React Router Tutorial</h1>
-          <ul className="nav">
+          <h1 style={{paddingLeft: 32}}>React Router Tutorial</h1>
+          <ul className="nav" id = "nav">
             <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
             <li><Link to="/canvas" activeStyle={{color:'green'}}>Canvas</Link></li>
             {/*

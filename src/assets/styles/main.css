@@ -14,24 +14,42 @@ li {
   color: green!important;
 }
 .box{
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
 .content{
   padding: 4px;
   position: relative;
 }
-.nav{
-  background-color: #e5e5e5;
-  height: 48px;
-}
+
 .nav li{
   float: left;
 }
+
 .nav>li>a {
   position: relative;
   display: block;
   padding: 14px 15px;
+}
+.nav-toggle{
+  position: absolute;
+  top: 28px;
+  right: 16px;
+}
+@media screen and (min-width: 40em) {
+  .box{
+    width: 960px;
+    margin: 0 auto;
+  }
+  .nav{
+    background-color: #e5e5e5;
+    height: 48px;
+  }
+  .nav-collapse li {
+    width: 25%;
+    *width: 24.9%; /* IE7 Hack */
+    _width: 19%; /* IE6 Hack */
+  }
 }
 .demo{
 

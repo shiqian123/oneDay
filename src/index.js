@@ -9,14 +9,21 @@ import reducer from './reducers'
 import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
 import {getAllData} from './actions'
-import App from './components/App';
-import Home from './components/Home';
-import Repos from './components/Repos';
-import Canvas from './components/Canvas';
-import User from './components/User';
-import Submit from './components/Submit';
-import Edit from './components/Edit';
-
+import App from './pages/App';
+import Home from './pages/Home';
+import Repos from './pages/Repos';
+import Canvas from './pages/Canvas';
+import User from './pages/User';
+import Submit from './pages/Submit';
+import {Edit,EditContent} from './pages/Edit';
+Date.prototype.formatDate = function () {
+  var y = this.getFullYear();
+  var m = this.getMonth() + 1;
+  var d = this.getDate();
+  m = m < 10 ? '0' + m : m;
+  d = d < 10 ? ('0' + d) : d;
+  return y + '-' + m + '-' + d;
+}
 const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') {
   middleware.push(createLogger());
@@ -38,8 +45,11 @@ ReactDOM.render(
           <Route path="/canvas" component={Canvas} />
           <Route path="/user" component={User} />
           <Route path="/submit" component={Submit} />
-          <Route path="/edit" component={Edit} />
+          <Route path="/edit" component={Edit}>
+          </Route>
         </Route>
+        <Route path="/editContent/:content" component={EditContent} />
+
       </Router>
     </MuiThemeProvider>
   </Provider>,

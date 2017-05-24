@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import blog from './blog'
+import blogs from './blogs'
 import visibilityFilter from './visibilityFilter'
 
 const blogApp = combineReducers({
-  blog,
+  blogs,
   // visibilityFilter
 })
 
