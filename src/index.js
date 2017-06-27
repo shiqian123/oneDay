@@ -16,6 +16,10 @@ import Canvas from './pages/Canvas';
 import User from './pages/User';
 import Submit from './pages/Submit';
 import {Edit,EditContent} from './pages/Edit';
+import  '../res/nav/responsive-nav.css';
+// import  '../src/assets/styles/bootstrap.css';
+import  '../src/assets/styles/main.css';
+
 Date.prototype.formatDate = function () {
   var y = this.getFullYear();
   var m = this.getMonth() + 1;

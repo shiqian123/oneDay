@@ -15,15 +15,15 @@ module.exports = {
     filename: 'index_bundle.js',
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.jsx$|\.js$/,
-        loader: 'eslint-loader',
-        include: `${__dirname}/src`,
-        exclude: /bundle\.js$/,
-      },
-    ],
-    loaders: [{
+    // preLoaders: [
+    //   {
+    //     test: /\.jsx$|\.js$/,
+    //     loader: 'eslint-loader',
+    //     include: `${__dirname}/src`,
+    //     exclude: /bundle\.js$/,
+    //   },
+    // ],
+    loaders: [   {test: /\.css$/,loader: 'style-loader!css-loader'},{
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
