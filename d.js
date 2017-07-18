@@ -76,9 +76,11 @@
 //  addClass('fix')
 // }
 (function (a) {
-  var a1 = '12345';
+    var a1 = '第一次提交';
+    var a1 = '第一次提交';
+    var a1 = '第一次提交';
 
-  console.log(a1)
+    console.log(a1)
 
 })(123);
 (function (a) {
