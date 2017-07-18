@@ -76,11 +76,11 @@
 //  addClass('fix')
 // }
 (function (a) {
-  var a1 = '88886555';
+  var a1 = '12345';
 
   console.log(a1)
 
 })(123);
 (function (a) {
-  console.log(a)
+  console.log(12121212)
 })(12355)
