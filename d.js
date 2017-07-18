@@ -76,7 +76,7 @@
 //  addClass('fix')
 // }
 (function (a) {
-  var a1 = '12345';
+  var a1 = '88888';
 
   console.log(a1)
 
