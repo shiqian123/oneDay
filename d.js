@@ -82,5 +82,5 @@
 
 })(123);
 (function (a) {
-  console.log(a)
+  console.log(12121212)
 })(12355)
