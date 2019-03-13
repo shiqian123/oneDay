@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Nav &middot; Multiple Navigations Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./js/styles/responsive-nav.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/responsive-nav.min.js"></script>
+  </head>
+  <body>
+        <div class="header">
+                <div class='left'>《</div>
+                <div class='center'>首页</div>
+            </div>
+    <div class="content">
+          <h1>
+            Darum sollte man das Handy von der Toilette verbannen
+          </h1>
+          <div>
+              <div class="left" style="padding:10px;">
+                  <img src="./img/demo.jpg" class='circle' alt="">
+              </div>
+              <div class="pbottom">张十三</div>
+              <div class="pbottom">地址北京市海淀区</div>
+
+              <div class="">2019-12-02</div>
+          </div>
+    </div>
+    <img src="./img/womenjpg.jpg" style="width:100%;" alt="">
+    <div class="content" style="padding-top:8px"> 
+            <div class="tip">
+                    当在马桶上使用时，手机很快就会变成细菌陷阱。
+                    当在马桶上使用时，手机很快就会变成细菌陷阱。
+            </div>
+        <p class='message'><strong>
+                快速阅读电子邮件或只是滚动浏览社交媒体 
+                - 几乎每个人都可能曾在浴室中使用过智能手机。
+            然而，安静的小地方的智能手机检查有一个主要的共同点：
+            健康风险。</strong>
+        </p>
+        <p  class='message'>
+            在另一项研究中，40％的人承认，即使在工作的卫生间，他们也离不开他们的数字助手 - 但是之后只有20％的人清洁手机。
+        </p>
+        <p  class='message'>
+            在另一项研究中，40％的人承认，即使在工作的卫生间，他们也离不开他们的数字助手 - 但是之后只有20％的人清洁手机。
+        </p>
+        <p  class='message'>
+            在另一项研究中，40％的人承认，即使在工作的卫生间，他们也离不开他们的数字助手 - 但是之后只有20％的人清洁手机。
+        </p>
+    </div>
+    <div class="description">
+        <h2 >评论区</h2>
+        <div class="left" style="padding:10px;">
+                <img src="./img/demo.jpg" class='circle' alt="">
+        </div>
+        <div class="pbottom">飞翔的风华谷
+            <span>9天前</span>
+        </div>
+        <div class="talk">
+                上厕所后和吃饭前 - 别忘了洗手机......;）
+                因为你可以在购买时服用一些葡萄球菌
+                ，所以如果你是第一个在7点钟发布他的狗屎的人！
+        </div>
+    </div>
+    <div>
+        <div class="left half">
+            <img src="./img/womenjpg.jpg" alt="">
+            <p>
+                    介绍5G：新的超级网有多危险？
+            </p>
+        </div>
+        <div class="left half" >
+                <img src="./img/womenjpg.jpg" alt="">
+                <p>
+                        介绍5G：新的超级网有多危险？
+                </p>
+            </div>
+        <div class="left half" >
+                <img src="./img/womenjpg.jpg"  alt="">
+         </div>
+    </div>
+    <script>
+
+      var navigation1 = responsiveNav(".nav-1",{
+        label:'开关'
+      });
+
+    </script>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        line-height: 1.25;
+        margin: 0 0 24px;
+    }
+    .half{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 6px
+    }
+    .half > img{
+        width: 140px;
+        height: 70px
+    }
+    .half > p{
+        margin: 4px 10px;
+    }
+     .content{
+       padding: 16px
+     }
+     .header{
+         color: #ffffff;
+       height: 48px;
+       line-height: 48px;
+       background: linear-gradient(234deg,rgba(64,0,144,.9) 0,rgba(0,58,188,.85) 100%)!important;
+     }
+     .nav-1{
+       text-align: center
+     }
+     .circle{
+         width: 36px;
+         height: 36px;
+         border-radius: 18px
+     }
+     .pbottom{
+         padding-bottom: 3px;
+         font-weight: 700
+     }
+     .tip{
+      font:  13px/1.6 YahooSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+      color:#767d84 
+    }
+    .message{
+        font-size: 14px;
+        line-height: 1.6
+    }
+    .description{
+        border-top:2px solid #222;
+        padding: 16px
+    }
+    .talk{
+        padding-left: 54px;font-size: 14px
+    }
+    </style>
+  </body>
+</html>
