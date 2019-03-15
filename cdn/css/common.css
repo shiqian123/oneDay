@@ -16,3 +16,11 @@ body{
 .center{
     text-align: center
 }
+.tip{
+    font:  13px/1.6 YahooSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:#767d84
+}
+.message{
+    font-size: 14px;
+    line-height: 1.6
+}

@@ -1,87 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>这是雅虎界面</title>
+    <title>z有导航界面</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <link rel="stylesheet" href="./js/styles/responsive-nav.css">
-      <link rel="stylesheet" href="./js/styles/common.css">
-      <link rel="stylesheet" href="./css/common.css">
-      <link rel="stylesheet" href="./js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-      <script src="jquery.3.3.1.js"></script>
-      <script src="./js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-      <script src="./js/responsive-nav.min.js"></script>
-  </head>
-  <body>
-  <div>
-      <span  id="nav-toggle" class="glyphicon glyphicon-align-justify right " style="line-height: 48px;color: #ffffff;padding-right: 16px"></span>
+    <link rel="stylesheet" href="./js/styles/responsive-nav.css">
+    <link rel="stylesheet" href="./js/styles/common.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./js/swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="jquery.3.3.1.js"></script>
+    <script src="./js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="./js/responsive-nav.min.js"></script>
+    <script src="./js/swiper-4.5.0/dist/js/swiper.min.js"></script>
+</head>
+<style>
+    /*html, body {*/
+    /*position: relative;*/
+    /*height: 100%;*/
+    /*}*/
+    /*body {*/
+    /*background: #000;*/
+    /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+    /*font-size: 14px;*/
+    /*color:#000;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*}*/
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-      <div class="header">
-          <span class="glyphicon glyphicon-menu-left left"></span>
-          <div class='center'>首页</div>
-      </div>
-      </div>
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
 
-    <nav  id="nav" class="nav-1 nav-collapse" style="background:#0c0c0c">
-      <ul>
-        <li><a href="#">首页</a></li>
-        <li><a href="#">跳转</a></li>
-        <li><a href="#">待定</a></li>
-        <li><a href="#">待定</a></li>
-      </ul>
-    </nav>
-    <div class="content">
-          <h1>
-            标题标题标题标题
-          </h1>
-          <div>by Amir</div>
-          <p>rUpdated ati 
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+
+    .gallery-thumbs {
+        height: 90px;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+</style>
+<body>
+    <div class="header_menu">
+        <span id="nav-toggle" class="glyphicon glyphicon-align-justify right "
+              style="line-height: 40px;color: #ffffff;padding-right: 16px">
+        </span>
+
+        <div class="header">
+            <span class="glyphicon glyphicon-menu-left left"></span>
+            <div class='center' style="font-size: 18px">新闻</div>
+        </div>
+        <nav id="nav" class="nav-1 nav-collapse" style="background:#0c0c0c">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">跳转</a></li>
+                <li><a href="#">待定</a></li>
+                <li><a href="#">待定</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content content_top">
+        <h3 style="font-weight: 700;line-height: 1.5">
+            奥运会自行车选手凯莉卡特琳23岁去世
+        </h3>
+        <div>by Amir</div>
+        <p style="margin-bottom: 0">rUpdated ati
             <span>
-              1406 GMT (2206 HKT) March 11, 2019
-          </span>
+                  1406 GMT (2206 HKT) March 11, 2019
+            </span>
         </p>
-        <img src="./img/demo.jpg" style="width:100%;" alt="">
-        <div class="banner">
-          banner
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper" style="height: 220px;">
+            <div class="swiper-slide">
+                <img class="img" src="./img/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/3.jpg" alt="">
+            </div>
         </div>
-        <div>
-          message
-        </div>
-        <div>
-          广告
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="img" src="./img/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="img" src="./img/3.jpg" alt="">
+            </div>
         </div>
     </div>
-    <script>
+    <div class="content" style="padding-top:24px">
+        <p class='message'><strong>
+            奥运会自行车选手凯莉卡特林上周末去世，美国自行车周日确认。 </strong>
+        </p>
+        <img src="./img/guanggao.png" alt="" style="width: 100%;margin: 20px 0">
 
-      var navigation1 = responsiveNav(".nav-1",{
-          animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
-          transition: 400,
-          customToggle: "#nav-toggle"
-      });
-
-    </script>
-    <style>
-     
-     .content{
-       padding: 16px
-     }
-     .nav-toggle{
-      display: inline-block;
-      padding: 10px 0px;
-      padding-right: 10px;
-      background-color: #404040;
-      z-index: 1;
-      width: 100%;
-      text-align: right;
-      color: #ffffff
-     }
-    
-     .header{
-     
-     }
-     .nav-1{
-       text-align: center
-     }
-    </style>
-  </body>
+        <p class='message'>
+            卡特琳的兄弟科林星期五在Facebook上说他的妹妹自杀了。
+        </p>
+        <p class='message'>
+            “在这么年轻的时候失去一个令人难以置信的人是非常困难的。凯利是我们的朋友和队友。我们向她的家人以及那些有幸了解她最好的人表示衷心的哀悼，”该团队说。
+        </p>
+        <p class='message' style="border-left: 2px solid #c00;
+        padding-left: 16px;
+        margin: 0 0 24px;">
+            美国自行车公司总裁兼首席执行官Rob DeMartini在一份声明中表示，“凯利不仅仅是一名运动员，而且她将永远是美国自行车系列的一员。”
+        </p>
+        <p class="paytitle">付费内容</p>
+        <div>
+            <img style="width: 100%" src="./img/news.jpg" alt="" title="">
+            <div style="font-weight: 700;color: #262626;line-height:1.5;font-size: 18px;padding-top: 8px">
+                三个家伙如何将他们的学习笔记变成数百万美元的创业公司
+                三个家伙如何将他们的学习笔记变成数百万美元的创业公司
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+<script>
+
+    var navigation1 = responsiveNav(".nav-1", {
+        animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
+        transition: 400,
+        customToggle: "#nav-toggle"
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+</script>
+<style>
+    .header_menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 999;
+    }
+    .header_menu > .header {
+        height: 40px;
+        line-height: 40px;
+    }
+    .header_menu > .header span {
+        line-height: 40px;
+    }
+    .content {
+        padding: 16px;
+        line-height: 1.6;
+    }
+    .content_top {
+        margin-top: 25px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+
+    .nav-collapse > ul > li {
+        background-color: #0c0c0c;
+        color: #ffffff;
+        line-height: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .nav-collapse > ul > li > a {
+
+        color: #ffffff;
+    }
+
+    .paytitle {
+        display: block;
+        width: 100%;
+        color: #404040 !important;
+        height: 36px;
+        -webkit-font-smoothing: antialiased;
+        border-bottom: solid 1px #e6e6e6;
+        margin-bottom: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: condensed;
+        letter-spacing: 2px;
+        color: #1a1a1a;
+        padding-top: 7px;
+        text-transform: uppercase;
+        font-family: "CNN Condensed", CNN, "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
+        font-size: 14px;
+    }
+
+    .nav-1 {
+        text-align: center
+    }
+
+    .img {
+        width: 100%;
+        padding: 8px
+    }
+</style>
