@@ -2,14 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Responsive Nav &middot; Multiple Navigations Demo</title>
+    <title>这是雅虎界面</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./js/styles/responsive-nav.css">
-    <script src="./js/responsive-nav.min.js"></script>
+      <link rel="stylesheet" href="./js/styles/responsive-nav.css">
+      <link rel="stylesheet" href="./js/styles/common.css">
+      <link rel="stylesheet" href="./css/common.css">
+      <link rel="stylesheet" href="./js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+      <script src="jquery.3.3.1.js"></script>
+      <script src="./js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+      <script src="./js/responsive-nav.min.js"></script>
   </head>
   <body>
+  <div>
+      <span  id="nav-toggle" class="glyphicon glyphicon-align-justify right " style="line-height: 48px;color: #ffffff;padding-right: 16px"></span>
 
-    <nav class="nav-1 nav-collapse" style="background:#0c0c0c">
+      <div class="header">
+          <span class="glyphicon glyphicon-menu-left left"></span>
+          <div class='center'>首页</div>
+      </div>
+      </div>
+
+    <nav  id="nav" class="nav-1 nav-collapse" style="background:#0c0c0c">
       <ul>
         <li><a href="#">首页</a></li>
         <li><a href="#">跳转</a></li>
@@ -41,7 +54,9 @@
     <script>
 
       var navigation1 = responsiveNav(".nav-1",{
-        label:'开关'
+          animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
+          transition: 400,
+          customToggle: "#nav-toggle"
       });
 
     </script>

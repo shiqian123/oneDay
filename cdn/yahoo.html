@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>Responsive Nav &middot; Multiple Navigations Demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./js/styles/responsive-nav.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <script src="./js/responsive-nav.min.js"></script>
-  </head>
+      <link rel="stylesheet" href="./js/styles/responsive-nav.css">
+      <link rel="stylesheet" href="./css/common.css">
+      <link rel="stylesheet" href="./js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+      <script src="jquery.3.3.1.js"></script>
+      <script src="./js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
   <body>
-        <div class="header">
-                <div class='left'>《</div>
+          <div class="header">
+            <span class="glyphicon glyphicon-menu-left left" aria-hidden="true"></span>
                 <div class='center'>首页</div>
-            </div>
+          </div>
     <div class="content">
           <h1>
             Darum sollte man das Handy von der Toilette verbannen
@@ -50,41 +52,61 @@
         </p>
     </div>
     <div class="description">
-        <h2 >评论区</h2>
+        <h3>
+            <svg class="Mend(5px) Cur(p)" width="21" style="fill:#000;stroke:#000;stroke-width:0;vertical-align:center;" height="21" viewBox="0 0 16 16" data-icon="comments" data-reactid="5"><path d="M14.002 10c0 .735-.625 1.333-1.395 1.333h-8.58l-2.028 1.892-.002-9.892C1.998 2.598 2.623 2 3.392 2h9.215c.77 0 1.395.598 1.395 1.333V10zM3.392.667C1.887.667.667 1.86.667 3.334v11.333c0 .265.157.505.4.61.085.038.176.056.266.056.165 0 .328-.062.453-.18l2.765-2.486h8.058c1.505 0 2.726-1.194 2.726-2.667V3.333c0-1.473-1.22-2.667-2.726-2.667H3.393zm7.947 4H4.68c-.367 0-.666.298-.666.667S4.314 6 4.682 6h6.657c.367 0 .665-.298.665-.666s-.298-.667-.666-.667zM4.68 7.333c-.367 0-.666.298-.666.667s.298.667.666.667h6.657c.367 0 .665-.3.665-.667s-.298-.667-.666-.667H4.68z" data-reactid="6"></path></svg>
+           评论区</h3>
         <div class="left" style="padding:10px;">
                 <img src="./img/demo.jpg" class='circle' alt="">
         </div>
-        <div class="pbottom">飞翔的风华谷
-            <span>9天前</span>
+        <div class="pbottom">
+            <span style="color:#188fff">飞翔的风华谷</span>
+            <span style="color: #878c93;font-size: 12px">9天前</span>
         </div>
         <div class="talk">
-                上厕所后和吃饭前 - 别忘了洗手机......;）
+               <span>
+                   上厕所后和吃饭前 - 别忘了洗手机......;）
                 因为你可以在购买时服用一些葡萄球菌
-                ，所以如果你是第一个在7点钟发布他的狗屎的人！
+                ，所以如果你是第一个在7点钟发布！
+               </span>
+            <div style="margin-top: 6px">
+                <!--图标 顶-->
+                <svg class="Cur(p)" width="14" height="14" viewBox="0 0 24 24" data-icon="thumbsup-outline" style="vertical-align: middle; fill: rgb(135, 140, 145); stroke: rgb(135, 140, 145); stroke-width: 0;"><path d="M2.4 21.7V11.6h2.1c1.1 0 1.7-.7 2.1-1.1.7-.7 1.5-1.4 2.2-2.1.3-.2.5-.4.7-.6 1.6-1.8 2.3-3.4 2.2-5.5 0 0 .1-.1.3 0 .5.1 1 .6 1.1 1.6.3 2.4-.2 4.3-.7 4.7-.9.7-.4 2 .8 2h7.1c.7 0 1.3.4 1.3.8 0 .3-.5.8-.7.8-1.6 0-1.6 2.1-.1 2.2 0 .1.1.2.1.4 0 .1 0 .2-.3.3-.3-.1-.5-.1-.7-.1-1.3 0-1.7 1.7-.5 2.2 0 0 .2.1.3.2.2.2.3.3.3.6 0 .1-.1.1-.3.3-.2.1-.5.2-.7.2-1.3.2-1.4 1.9-.1 2.2l.1.1s.2.2.2.5c0 .4-.2.6-.6.6l-16.2-.2zM20.3 8.3h-5.1c.4-1.3.6-2.9.3-4.7-.2-2-1.5-3.3-3.1-3.6-1.7-.3-3.2.7-3.1 2.4.1 1.5-.4 2.6-1.7 4l-.5.5c-.6.7-1.3 1.4-2 2-.3.2-.5.4-.7.5H1.2c-.7 0-1.2.5-1.2 1.1v12.3c0 .7.6 1.2 1.2 1.2h17.3c1.6 0 3-1 3-2.8 0-.5-.1-.9-.3-1.2.7-.5 1.1-1.1 1.1-2 0-.5-.1-.9-.3-1.3.7-.4 1.2-1.1 1.2-2 0-.4-.1-.9-.3-1.3.6-.5 1-1.3 1-2.1.1-1.8-1.7-3-3.6-3z"></path></svg>
+                <span>12</span>
+                <!--图标 踩-->
+                <svg class="Cur(p)" width="14" height="14" viewBox="0 0 24 24" data-icon="thumbsdown-outline" style="vertical-align: middle; fill: rgb(135, 140, 145); stroke: rgb(135, 140, 145); stroke-width: 0;"><path d="M21.6 2.3v10.1h-2.1c-1.1 0-1.7.7-2.1 1.1-.7.7-1.5 1.4-2.2 2.1-.2.2-.4.4-.5.6-1.6 1.8-2.3 3.4-2.2 5.5 0 0-.1.1-.3 0-.5-.1-1-.6-1.1-1.6-.3-2.4.2-4.3.7-4.7.9-.7.4-2-.8-2H3.9c-.7 0-1.3-.4-1.3-.8-.2-.2.4-.6.5-.6 1.6 0 1.6-2.1.1-2.2 0-.1-.1-.2-.1-.4 0-.1 0-.2.3-.3s.5-.1.7-.1c1.3 0 1.7-1.7.5-2.2 0 0-.2-.1-.3-.2-.2-.2-.3-.3-.3-.6 0 0 .1-.1.3-.2.3-.1.6-.2.7-.2 1.3-.2 1.4-1.9.1-2.2L5 3.3s-.1-.2-.1-.5c0-.4.2-.6.6-.6l16.1.1zM0 12.7c0 1.8 1.8 3 3.7 3h5.1c-.4 1.3-.6 2.9-.3 4.7.3 1.9 1.5 3.3 3.1 3.5 1.7.3 3.2-.7 3.1-2.4-.1-1.5.4-2.6 1.7-4 .2-.2.3-.4.5-.5.7-.7 1.4-1.3 2.1-1.9.3-.2.5-.4.6-.5h3.2c.7 0 1.2-.5 1.2-1.1V1.2c0-.7-.6-1.2-1.2-1.2H5.5c-1.6 0-3 1-3 2.8 0 .5.1.9.3 1.2-.8.5-1.2 1.2-1.2 2 0 .5.1.9.3 1.3-.7.4-1.2 1.1-1.2 2 0 .4.1.9.3 1.3-.6.6-1 1.3-1 2.1"></path></svg>
+                <span>2</span>
+            </div>
         </div>
     </div>
-    <div>
-        <div class="left half">
+          <!--广告-->
+          <div class="guanggao">
+              <img src="./img/guanggao.png" alt="" style="width: 100%;padding: 16px">
+          </div>
+          <!--文章链接模块-->
+      <div class="messageHref">
+          <div class="title">
+              相关链接
+          </div>
+        <div class=" half">
             <img src="./img/womenjpg.jpg" alt="">
             <p>
                     介绍5G：新的超级网有多危险？
             </p>
         </div>
-        <div class="left half" >
+        <div class=" half" >
                 <img src="./img/womenjpg.jpg" alt="">
                 <p>
-                        介绍5G：新的超级网有多危险？
+                    介绍5G：新的超级网有多危险？
                 </p>
             </div>
-        <div class="left half" >
+        <div class=" half" >
                 <img src="./img/womenjpg.jpg"  alt="">
+            <p>
+                介绍5G：新的超级网有多危险？
+            </p>
          </div>
     </div>
     <script>
-
-      var navigation1 = responsiveNav(".nav-1",{
-        label:'开关'
-      });
 
     </script>
     <style>
@@ -97,12 +119,13 @@
         margin: 0 0 24px;
     }
     .half{
-        width: 50%;
+        width: 49%;
         text-align: center;
-        margin-bottom: 6px
+        margin-bottom: 6px;
+        display: inline-block;
     }
     .half > img{
-        width: 140px;
+        width: 156px;
         height: 70px
     }
     .half > p{
@@ -116,6 +139,10 @@
        height: 48px;
        line-height: 48px;
        background: linear-gradient(234deg,rgba(64,0,144,.9) 0,rgba(0,58,188,.85) 100%)!important;
+     }
+     .header > span{
+         line-height: 48px;
+         margin-left: 12px;
      }
      .nav-1{
        text-align: center
@@ -144,6 +171,13 @@
     .talk{
         padding-left: 54px;font-size: 14px
     }
+     .messageHref > .title {
+         background-color: #eeeeee;
+         height: 40px;
+         line-height: 40px;
+         padding-left: 16px;
+         margin-bottom: 12px;
+     }
     </style>
   </body>
 </html>
